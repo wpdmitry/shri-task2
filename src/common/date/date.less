@@ -1,0 +1,55 @@
+.date {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 4;
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__button {
+    position: relative;
+    background-color: #E9ECEF;
+  }
+
+  &__calendar {
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 3;
+    visibility: hidden;
+  }
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    height: 18px;
+    line-height: 18px;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 0;
+  }
+
+  &__input-hidden {
+    display: none;
+
+    &:checked {
+
+      + [class$="text"] {
+        font-weight: 700;
+        color: #0070E0;
+
+        + [class$="calendar"] {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

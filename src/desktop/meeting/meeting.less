@@ -1,0 +1,55 @@
+@import "../../common/import/_media";
+
+@media @desktop {
+  .meeting {
+    height: calc(~"100% - 71px - 76px");
+    padding: 31px 200px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+
+    &__title {
+      margin-top: 20px;
+      width: 420px;
+      height: 58px;
+    }
+
+    &__date {
+      margin-top: 20px;
+      height: 58px;
+      width: 420px;
+    }
+
+    &__members {
+      margin-top: 24px;
+      width: 420px;
+    }
+
+    &__talks {
+      margin-top: 24px;
+      width: 420px;
+    }
+
+    &__input-members {
+      height: 58px;
+      width: 100%;
+    }
+
+    &__section-delete {
+      display: none;
+    }
+
+    &__notification {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 228px;
+      width: 444px;
+    }
+
+    &__bg {
+      background-color:  rgba(0,16,33,0.40);
+    }
+  }
+}

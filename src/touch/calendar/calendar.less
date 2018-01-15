@@ -1,0 +1,29 @@
+@import "../../common/import/_media";
+
+@media @touch {
+  .calendar {
+    flex-direction: column;
+    font-size: 16px;
+    overflow-y: scroll;
+
+    &__item {
+      margin: 0 15px;
+    }
+
+    &__table-caption {
+      height: 18px;
+      margin: 15px 0 15px;
+      &::first-letter {
+        color: #f00;
+      }
+    }
+
+    &__table {
+      height: calc(~'90% - 48px');
+    }
+
+    &__table-data {
+      padding: 7px;
+    }
+  }
+}

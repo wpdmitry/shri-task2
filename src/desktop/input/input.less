@@ -1,0 +1,32 @@
+@import "../../common/import/_media";
+
+@media @desktop {
+  .input {
+
+    &__label {
+
+      &_text {
+        &:before {
+          content: "Дата";
+        }
+      }
+    }
+
+    &__text,
+    &__time {
+
+      &::placeholder {
+        font-size: 13px;
+        letter-spacing: 0.47px;
+      }
+
+      &:hover {
+        border: 2px solid #00aaff;
+
+        &:focus {
+          border: 2px solid #007DFF;
+        }
+      }
+    }
+  }
+}

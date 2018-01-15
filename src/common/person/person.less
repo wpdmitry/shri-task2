@@ -1,0 +1,29 @@
+.person {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__name {
+      margin-left: 8px;
+      height: 17px;
+      color: #000000;
+      letter-spacing: 0;
+      line-height: 17px;
+    }
+
+    &__floor {
+      height: 15px;
+      font-size: 13px;
+      color: #bababa;
+      letter-spacing: 0;
+      line-height: 15px;
+
+      &:before {
+        content: "·";
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+  }
+

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Яндекс Переговорки | Встречи</title>
+
+    <link rel="stylesheet" href="css/meeting.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="image/svg/logo.svg" alt="logo">
+    </header>
+    <div class="meeting">
+        <div class="meeting__bg"></div>
+        <div class="meeting__notification">
+            <div class="notification">
+                <img class="notification__emoji" src="image/svg/emoji1.svg" alt="">
+                <div class="notification__status">Встреча будет <br> удалена безвозвратно</div>
+                <div class="notification__buttons">
+                    <div class="notification__button">
+                        <button class="button button_cancel">
+                            <span class="button__text button__text_black button__text_increase button__text_bold">Отмена</span>
+                        </button>
+                    </div>
+                    <div class="notification__button">
+                        <button class="button button_cancel">
+                            <span class="button__text button__text_black button__text_increase button__text_bold">Удалить</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="meeting__status">
+            <div class="status">
+                <div class="status__text">Новая встреча</div>
+                <div class="status__close">
+                    <img class="status__image" src="image/svg/close.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="meeting__title">
+            <div class="input">
+                <label for="title" class="input__label">Тема</label>
+                <div class="input__wrapper">
+                    <input type="text" class="input__text input__text_increase" id="title" placeholder="О чём будете говорить?">
+                </div>
+            </div>
+        </div>
+        <div class="meeting__date">
+            <div class="date-selection">
+                <div class="date-selection__date">
+                    <div class="input">
+                        <label for="date" class="input__label input__label_text"></label>
+                        <div class="input__wrapper">
+                            <input type="text" class="input__text input__text_increase" id="date" placeholder="14 декабря, 2017">
+                            <div class="input__calendar">
+                                <img class="input__img" src="image/svg/calendar.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="date-selection__time">
+                    <div class="date-selection__time-start">
+                        <div class="input">
+                            <label for="time-start" class="input__label input__label_touch">Начало</label>
+                            <div class="input__wrapper input__wrapper_unmarked">
+                                <input type="text" class="input__time input__time_increase" id="time-start" placeholder="12:00" maxlength="5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date-selection__delimiter">—</div>
+                    <div class="date-selection__time-end">
+                        <div class="input">
+                            <label for="time-end" class="input__label input__label_touch">Конец</label>
+                            <div class="input__wrapper input__wrapper_unmarked">
+                                <input type="text" class="input__time input__time_increase" id="time-end" placeholder="13:00" maxlength="5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="meeting__members">
+            <div class="meeting__input-members">
+                <div class="input">
+                    <label for="members" class="input__label">Участники</label>
+                    <div class="input__wrapper">
+                        <input type="text" class="input__text input__text_increase" id="members" placeholder="Например, Тор Одинович">
+                        <div class="input__arrow">
+                            <img class="input__img input__img_scale" src="image/svg/arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="meeting__select-members">
+                <div class="select-members">
+                    <div class="select-members__choose">
+                        <label class="select-members__member" for="member1">
+                            <div class="person">
+                                <img class="person__avatar person__avatar_small" src="image/avatars/LexLuthor.jpg" alt="">
+                                <div class="person__name person__name_small">Лекс Лютер</div>
+                                <div class="person__floor">7 этаж</div>
+                            </div>
+                        </label>
+                        <label class="select-members__member" for="member2">
+                            <div class="person">
+                                <img class="person__avatar person__avatar_small" src="image/avatars/ThomasAnderson.jpg" alt="">
+                                <div class="person__name person__name_small">Томас Андерсон</div>
+                                <div class="person__floor">2 этаж</div>
+                            </div>
+                        </label>
+                        <label class="select-members__member" for="member3">
+                            <div class="person">
+                                <img class="person__avatar person__avatar_small" src="image/avatars/DarthVader.jpg" alt="">
+                                <div class="person__name person__name_small">Дарт Вейдер</div>
+                                <div class="person__floor">1 этаж</div>
+                            </div>
+                        </label>
+                        <label class="select-members__member" for="member4">
+                            <div class="person">
+                                <img class="person__avatar person__avatar_small" src="image/avatars/ClarkKent.jpg" alt="">
+                                <div class="person__name person__name_small">Кларк Кент</div>
+                                <div class="person__floor">2 этаж</div>
+                            </div>
+                        </label>
+                        <label class="select-members__member" for="member5">
+                            <div class="person">
+                                <img class="person__avatar person__avatar_small" src="image/avatars/SherlockHolmes.jpg" alt="">
+                                <div class="person__name person__name_small">Шерлок Холмс</div>
+                                <div class="person__floor">2 этаж</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="select-members__chosen">
+                        <input class="select-members__hidden-input" id="member1" type="checkbox" name="member">
+                        <div class="select-members__member-chosen">
+                            <div class="person">
+                                <img class="person__avatar" src="image/avatars/LexLuthor.jpg" alt="avatar">
+                                <div class="person__name">Лекс Лютер</div>
+                            </div>
+
+                            <div class="select-members__close">
+                                <img class="select-members__close-img" src="image/svg/close.svg" alt="">
+                            </div>
+                        </div>
+
+                        <input class="select-members__hidden-input" id="member2" type="checkbox" name="member">
+                        <div class="select-members__member-chosen">
+                            <div class="person">
+                                <img class="person__avatar" src="image/avatars/ThomasAnderson.jpg" alt="avatar">
+                                <div class="person__name">Томас Андерсон</div>
+                            </div>
+
+                            <div class="select-members__close">
+                                <img class="select-members__close-img" src="image/svg/close.svg" alt="">
+                            </div>
+                        </div>
+
+                        <input class="select-members__hidden-input" id="member3" type="checkbox" name="member">
+                        <div class="select-members__member-chosen">
+                            <div class="person">
+                                <img class="person__avatar" src="image/avatars/DarthVader.jpg" alt="avatar">
+                                <div class="person__name">Дарт Вейдер</div>
+                            </div>
+
+                            <div class="select-members__close">
+                                <img class="select-members__close-img" src="image/svg/close.svg" alt="">
+                            </div>
+                        </div>
+
+                        <input class="select-members__hidden-input" id="member4" type="checkbox" name="member">
+                        <div class="select-members__member-chosen">
+                            <div class="person">
+                                <img class="person__avatar" src="image/avatars/ClarkKent.jpg" alt="avatar">
+                                <div class="person__name">Кларк Кент</div>
+                            </div>
+
+                            <div class="select-members__close">
+                                <img class="select-members__close-img" src="image/svg/close.svg" alt="">
+                            </div>
+                        </div>
+
+                        <input class="select-members__hidden-input" id="member5" type="checkbox" name="member">
+                        <div class="select-members__member-chosen">
+                            <div class="person">
+                                <img class="person__avatar" src="image/avatars/SherlockHolmes.jpg" alt="avatar">
+                                <div class="person__name">Шерлок Холмс</div>
+                            </div>
+
+                            <div class="select-members__close">
+                                <img class="select-members__close-img" src="image/svg/close.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="meeting__talks">
+            <div class="talks">
+                <div class="talks__title">Рекомендованные переговорки</div>
+                <div class="talks__item">
+                    <div class="talks__time">16:00—16:30</div>
+                    <div class="talks__location">Готем &middot; 4 этаж</div>
+                </div>
+                <div class="talks__item">
+                    <div class="talks__time">16:00—16:30</div>
+                    <div class="talks__location">Поле непаханное &middot; 4 этаж</div>
+                </div>
+                <div class="talks__item">
+                    <div class="talks__time">16:00—16:30</div>
+                    <div class="talks__location">Тёмная башня &middot; 4 этаж</div>
+                </div>
+                <div class="talks__item talks__item_hidden">
+                    <div class="talks__time">16:00—16:30</div>
+                    <div class="talks__location">Готем &middot; 4 этаж</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__button footer__button_cancel">
+            <button class="button button_cancel">
+                <span class="button__text button__text_black button__text_bold">Отмена</span>
+            </button>
+        </div>
+        <div class="footer__button footer__button_create">
+            <button class="button button_create">
+                <span class="button__text button__text_white button__text_bold">Создать встречу</span>
+            </button>
+        </div>
+    </footer>
+
+    <script src="js/bundle.meeting.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+@import "../../common/import/_media";
+
+@media @desktop {
+  .diagram {
+
+    &__floor {
+      margin-top: 42px;
+    }
+
+    &__room {
+      height: 44px;
+
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+
+    &__time-item {
+      height: 28px;
+
+      &:hover,
+      &_active {
+        background-color: #1D54FE;
+
+        &:not([class$="busy"]):before {
+          content: "+";
+          width: 12px;
+          height: 15px;
+          line-height: 15px;
+          font-family: "Open Sans", sans-serif;
+          font-size: 21px;
+          font-weight: 700;
+          text-align: center;
+          display: block;
+          color: #FFFFFF;
+        }
+
+        &:active:not([class$="busy"]) {
+          background-color: #1d52eb;
+        }
+      }
+
+      &_busy {
+
+        &:hover {
+          background-color: #aabccd;
+        }
+
+        &:active {
+          background-color: #98A9B9;
+        }
+      }
+    }
+
+    &__popup {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 338px;
+      height: 120px;
+      padding: 14px 8px 0 16px;
+    }
+  }
+}
+
+
+

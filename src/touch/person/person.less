@@ -1,0 +1,25 @@
+@import "../../common/import/_media";
+
+@media @touch {
+  .person {
+
+    &__avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 32px;
+
+      &_small {
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    &__name {
+      font-size: 15px;
+
+      &_small {
+        font-size: 13px;
+      }
+    }
+  }
+}

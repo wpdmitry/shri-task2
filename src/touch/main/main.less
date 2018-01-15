@@ -1,0 +1,46 @@
+@import "../../common/import/_media";
+
+@media @touch {
+  .main {
+    width: 100%;
+    height: calc(~"100% - 56px - 48px");
+    top: 104px;
+    overflow-y: hidden;
+
+    &__time-scale {
+      width: calc(~"100% - 181px");
+      height: 32px;
+    }
+
+    &__wrapper {
+      height: calc(~"100% - 32px");
+      width: max-content;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    &__rooms {
+      min-width: 181px;
+    }
+
+    &__vertical-line {
+      float: left;
+      margin-left: 16px;
+
+      &:first-child {
+        margin-left: 29px;
+      }
+    }
+
+    &__notification {
+      bottom: 24px;
+      left: 0;
+      right: 0;
+      height: 267px;
+    }
+
+    &__bg {
+      background-color:  rgba(0,16,33,0.80);
+    }
+  }
+}

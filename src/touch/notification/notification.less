@@ -1,0 +1,27 @@
+@import "../../common/import/_media";
+
+@media @touch {
+  .notification {
+
+    &__button {
+      margin-top: 31px;
+      width: 120px;
+      height: 44px;
+    }
+
+    &__buttons {
+      height: 44px;
+
+      > * {
+        &:first-child {
+          width: 103px;
+        }
+
+        &:last-child {
+          width: 111px;
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}

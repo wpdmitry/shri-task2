@@ -1,0 +1,27 @@
+@import "../../common/import/_media";
+
+@media @touch {
+  .date-selection {
+    flex-direction: column;
+
+    &__date {
+      width: 100%;
+      height: 64px;
+    }
+
+    &__time {
+      margin-top: 8px;
+      width: 100%;
+      height: 44px;
+    }
+
+    &__time-start,
+    &__time-end {
+      flex-grow: 1;
+    }
+
+    &__delimiter {
+      margin: 0 4px;
+    }
+  }
+}

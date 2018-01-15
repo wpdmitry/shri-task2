@@ -1,0 +1,27 @@
+@import "../../common/import/_media";
+
+@media @desktop {
+  .notification {
+
+    &__button {
+      margin-top: 24px;
+      width: 84px;
+      height: 36px;
+    }
+
+    &__buttons {
+      height: 36px;
+
+      > * {
+        &:first-child {
+          width: 80px;
+        }
+
+        &:last-child {
+          width: 86px;
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}

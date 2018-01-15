@@ -1,0 +1,39 @@
+@import "../../common/import/_media";
+
+@media @touch {
+  .input {
+
+    &__label {
+
+      &_touch {
+        display: none;
+      }
+
+      &_text {
+        &:before {
+          content: "Дата и время";
+        }
+      }
+    }
+
+    &__wrapper {
+
+      &_unmarked {
+        height: 100%;
+      }
+    }
+
+    &__text,
+    &__time {
+
+      &::placeholder {
+        font-size: 15px;
+        letter-spacing: 0;
+      }
+
+      &_increase {
+        font-size: 15px;
+      }
+    }
+  }
+}

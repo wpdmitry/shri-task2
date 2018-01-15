@@ -1,0 +1,36 @@
+@import "../../common/import/_media";
+
+@media @desktop {
+  .date {
+    padding: 0 24px;
+    width: 245px;
+    height: 46px;
+
+    &__arrow {
+      width: 10px;
+      height: 10px;
+    }
+
+    &__button {
+      width: 24px;
+      height: 24px;
+      border-radius: 100px;
+
+      &:hover {
+        background-color: #e3e6e9;
+      }
+
+      &:active {
+        background-color: #e0e3e6;
+      }
+    }
+
+    &__calendar {
+      top: 47px;
+      height: 232px;
+      width: 604px;
+      box-shadow: 0 1px 8px 0 rgba(0,44,92,0.28);
+      border-radius: 4px;
+    }
+  }
+}

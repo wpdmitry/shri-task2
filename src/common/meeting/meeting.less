@@ -1,0 +1,32 @@
+.meeting {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+
+  &__status {
+    width: 100%;
+    height: 24px;
+  }
+
+  &__select-members {
+    width: 100%;
+  }
+
+  &__notification {
+    position: fixed;
+    z-index: 10;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 16px 0 rgba(0,44,92,0.28);
+    border-radius: 8px;
+  }
+
+  &__bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+  }
+}

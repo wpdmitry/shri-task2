@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Яндекс Переговорки | Главная</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="image/svg/logo.svg" alt="logo">
+
+        <div class="header__button">
+            <button class="button button_create">
+                <span class="button__text button__text_white">Создать встречу</span>
+            </button>
+        </div>
+    </header>
+    <div class="date">
+        <div class="date__button">
+            <img class="date__arrow" src="image/svg/arrow2.svg" alt="">
+        </div>
+        <input class="date__input-hidden" type="checkbox" id="dateText">
+        <label for="dateText" class="date__text">14 дек &middot; Сегодня</label>
+        <div class="date__calendar"></div>
+        <div class="date__button">
+            <img class="date__arrow" src="image/svg/arrow.svg" alt="">
+        </div>
+    </div>
+    <div class="main">
+        <div class="main__bg"></div>
+        <div class="main__notification">
+            <div class="notification">
+                <img class="notification__emoji" src="image/svg/emoji2.svg" alt="">
+                <div class="notification__status">Встреча создана!</div>
+                <div class="notification__datetime">14 декабря, 15:00 — 17:00</div>
+                <div class="notification__location">Готем · 4 этаж</div>
+                <div class="notification__button">
+                    <button class="button button_create">
+                        <span class="button__text button__text_white button__text_increase">Хорошо</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="main__time-scale">
+            <div class="main__empty"></div>
+            <div class="time-scale">
+                <div class="time-scale__label time-scale__label_inactive">8:00</div>
+                <div class="time-scale__label time-scale__label_inactive">9</div>
+                <div class="time-scale__label time-scale__label_inactive">10</div>
+                <div class="time-scale__label time-scale__label_inactive">11</div>
+                <div class="time-scale__label ">12</div>
+                <div class="time-scale__label">13</div>
+                <div class="time-scale__label">14</div>
+                <div class="time-scale__label">15</div>
+                <div class="time-scale__label">16</div>
+                <div class="time-scale__label">17</div>
+                <div class="time-scale__label">18</div>
+                <div class="time-scale__label">19</div>
+                <div class="time-scale__label">20</div>
+                <div class="time-scale__label">21</div>
+                <div class="time-scale__label">22</div>
+                <div class="time-scale__label">23</div>
+                <div class="time-scale__label time-scale__label_current">11:05</div>
+            </div>
+            <div class="main__empty"></div>
+        </div>
+        <div class="main__wrapper">
+            <div class="main__rooms">
+                <div class="rooms">
+                    <div class="rooms__floor">
+                        <div class="rooms__floor-text">7 ЭТАЖ</div>
+
+                        <div class="rooms__room">
+                            <div class="rooms__room-title">Ржавый Фред</div>
+                            <div class="rooms__room-capacity">3 — 6 человек</div>
+                        </div>
+
+                        <div class="rooms__room rooms__room__available">
+                            <div class="rooms__room-title">Прачечная</div>
+                            <div class="rooms__room-capacity">до 10 человек</div>
+                        </div>
+
+                        <div class="rooms__room rooms__room__available">
+                            <div class="rooms__room-title">Желтый дом</div>
+                            <div class="rooms__room-capacity">до 10 человек</div>
+                        </div>
+
+                        <div class="rooms__room">
+                            <div class="rooms__room-title">Оранжевый тюльпан</div>
+                            <div class="rooms__room-capacity">до 10 человек</div>
+                        </div>
+                    </div>
+                    <div class="rooms__floor">
+                        <div class="rooms__floor-text">6 ЭТАЖ</div>
+
+                        <div class="rooms__room rooms__room__available">
+                            <div class="rooms__room-title">Джокер</div>
+                            <div class="rooms__room-capacity">3 — 6 человек</div>
+                        </div>
+
+                        <div class="rooms__room rooms__room__available">
+                            <div class="rooms__room-title">Мариванна</div>
+                            <div class="rooms__room-capacity">3 — 6 человек</div>
+                        </div>
+
+                        <div class="rooms__room rooms__room__available">
+                            <div class="rooms__room-title">Тонкий Боб</div>
+                            <div class="rooms__room-capacity">3 — 6 человек</div>
+                        </div>
+
+                        <div class="rooms__room rooms__room__available">
+                            <div class="rooms__room-title">Чёрная вдова</div>
+                            <div class="rooms__room-capacity">3 — 6 человек</div>
+                        </div>
+
+                        <div class="rooms__room rooms__room__available">
+                            <div class="rooms__room-title">Белорусский ликёр</div>
+                            <div class="rooms__room-capacity">3 — 6 человек</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__diagram">
+                <div class="diagram">
+                    <div class="diagram__floor">
+                        <div class="diagram__room">
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 969px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                        </div>
+                        <div class="diagram__room">
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 205px"></div>
+                            <div class="diagram__time-item" style="min-width: 199px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: calc(100% - 470px)"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                        </div>
+                        <div class="diagram__room">
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 205px"></div>
+                            <div class="diagram__time-item diagram__time-item_active" style="min-width: 53px"></div>
+                            <div class="diagram__time-item" style="min-width: 120px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 74px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 129px">
+                                <label class="diagram__label" for="floor7-room3-time4">
+                                    <input class="diagram__input-hidden" id="floor7-room3-time4" type="checkbox">
+                                    <div class="diagram__triangle"></div>
+                                    <div class="diagram__popup">
+                                        <div class="popup">
+                                            <div class="popup__edit">
+                                                <img class="popup__edit-img" src="image/svg/edit.svg" alt="">
+                                            </div>
+                                            <div class="popup__title">Рассуждения о высоком</div>
+                                            <div class="popup__description">
+                                                <span class="popup__date">14 декабря,</span>
+                                                <span class="popup__time">15:00 - 17:00</span>
+                                                <span class="popup__delimiter">·</span>
+                                                <span class="popup__room">Желтый дом</span>
+                                            </div>
+                                            <div class="popup__members">
+                                                <div class="popup__creator">
+                                                    <div class="person">
+                                                        <img class="person__avatar" src="image/avatars/DarthVader.jpg" alt="">
+                                                        <div class="person__name">Дарт Вейдер</div>
+                                                    </div>
+                                                </div>
+                                                <div class="popup__other">и 12 участников</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: calc(100% - 648px)"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                        </div>
+                        <div class="diagram__room">
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: calc(100% - 66px)"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                        </div>
+                    </div>
+                    <div class="diagram__floor">
+                        <div class="diagram__room">
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 205px"></div>
+                            <div class="diagram__time-item" style="min-width: 119px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 43px"></div>
+                            <div class="diagram__time-item" style="min-width: 120px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 100px"></div>
+                            <div class="diagram__time-item" style="min-width: 20px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 70px"></div>
+                            <div class="diagram__time-item" style="min-width: 103px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: calc(100% - 846px)"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                        </div>
+                        <div class="diagram__room">
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 334px"></div>
+                            <div class="diagram__time-item" style="min-width: 103px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 87px"></div>
+                            <div class="diagram__time-item" style="min-width: 60px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 60px"></div>
+                            <div class="diagram__time-item" style="min-width: 60px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: calc(100% - 770px)"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                        </div>
+                        <div class="diagram__room">
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 285px"></div>
+                            <div class="diagram__time-item" style="min-width: 80px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 200px"></div>
+                            <div class="diagram__time-item" style="min-width: 49px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 91px"></div>
+                            <div class="diagram__time-item" style="min-width: 200px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: calc(100% - 971px)"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                        </div>
+                        <div class="diagram__room">
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 245px"></div>
+                            <div class="diagram__time-item" style="min-width: 103px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 17px"></div>
+                            <div class="diagram__time-item" style="min-width: 120px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 100px"></div>
+                            <div class="diagram__time-item" style="min-width: 20px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 100px"></div>
+                            <div class="diagram__time-item" style="min-width: 60px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: calc(100% - 831px)"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                        </div>
+                        <div class="diagram__room">
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 235px"></div>
+                            <div class="diagram__time-item" style="min-width: 77px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 273px"></div>
+                            <div class="diagram__time-item" style="min-width: 20px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 20px"></div>
+                            <div class="diagram__time-item" style="min-width: 15px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 25px"></div>
+                            <div class="diagram__time-item" style="min-width: 30px"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: calc(100% - 761px)"></div>
+                            <div class="diagram__time-item diagram__time-item_busy" style="min-width: 33px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bundle.main.js"></script>
+</body>
+</html>

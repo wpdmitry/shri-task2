@@ -1,0 +1,46 @@
+@import "../../common/import/_media";
+
+@media @touch {
+  .diagram {
+
+    &__floor {
+      margin-top: 37px;
+    }
+
+    &__room {
+      height: 58px;
+
+      &:not(:first-child) {
+        margin-top: 2px;
+      }
+    }
+
+    &__time-item {
+      height: 100%;
+
+      &:active:not([class$="busy"]) {
+        background-color: #1d52eb;
+
+        &:before {
+          content: "+";
+          width: 15px;
+          height: 17px;
+          line-height: 17px;
+          font-family: "Open Sans", sans-serif;
+          font-size: 27px;
+          font-weight: 700;
+          text-align: center;
+          display: block;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    &__popup {
+      width: 100vw;
+      height: 136px;
+      padding: 17px 16px 0;
+    }
+  }
+}
+
